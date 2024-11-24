@@ -1,0 +1,132 @@
+/* Reset styles */
+body, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for centering */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f9fc;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Header styling */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Custom file input label */
+.choose-file-label {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.choose-file-label:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+/* Canvas styling for scaling */
+canvas {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    image-rendering: pixelated;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+/* Output text styling */
+p {
+    font-size: 18px;
+    color: #555;
+    margin: 15px 0;
+}
+
+/* Button container styling */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+/* Transparent message styling */
+#transparentMessage {
+    font-size: 16px;
+    color: #e63946;
+    font-style: italic;
+}
+
+/* Style for file name */
+.file-name {
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
